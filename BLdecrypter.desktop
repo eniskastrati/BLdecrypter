@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BLdecrypter
+Comment=Bit Locker Decrypter for Linux
+Exec=/bin/bash bldecrypter
+Icon=/opt/BLdecrypter/BLdecrypter.png
+Path=/opt/BLdecrypter/
+Terminal=true
+StartupNotify=true
