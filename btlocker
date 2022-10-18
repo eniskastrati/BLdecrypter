@@ -1,4 +1,15 @@
 #!/bin/bash
+
+#application intro
+echo "************************************************"
+echo "*                                              *"
+echo "*                  BLdecrypter                 *"
+echo "*                                              *"
+echo "*              developed by: Enis K            *"
+echo "************************************************"
+echo 
+echo 
+
 #asking user what to do?
 echo "- Type 1 to mount a device"
 echo "- Type 2 to unmoun a device"
