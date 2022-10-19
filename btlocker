@@ -21,8 +21,8 @@ echo
 if [ "$choice" = "1" ]; then
     #Ask user for the mount partition
     echo "Creating needed Folders in this PC"
-    mkdir -p /media/decrypt;
-    mkdir -p /media/windows-mount;
+    sudo mkdir -p /media/decrypt;
+    sudo mkdir -p /media/windows-mount;
     echo
     sudo fdisk -l | tail -2;
     echo -n "Please type in the partition that you want to mount (just the id after /dev/): ";
@@ -37,6 +37,7 @@ if [ "$choice" = "1" ]; then
     echo "2.******Mounting decrypted device into /media/windows-mount/";
     sudo mount -o loop /media/decrypt/dislocker-file /media/windows-mount/;
     echo "******Succesfully mounted******";
+    sleep infinity
 fi
 
 if [ "$choice" = "2" ]; then
@@ -44,5 +45,6 @@ if [ "$choice" = "2" ]; then
     sudo umount /media/windows-mount/
     sudo umount /media/decrypt/
     echo "Succesfully unmounted the device from /media/windows-mount/"
+    sleep infinity
 fi
 
