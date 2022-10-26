@@ -1,0 +1,15 @@
+echo "Uninstalling BLdecrypter from this Maschines";
+echo
+sleep 2;
+echo "Please type in your password to allow the uninstallation"
+sleep 1;
+sudo apt-get remove dislocker;
+sudo rm -rf /opt/BLdecrypter
+sudo rm /usr/share/applications/BLdecrypter.desktop
+echo
+echo
+echo "#######################################################"
+echo "#           Uninstallation process is done!           #";
+echo "#######################################################"
+sleep 4;
+exit;
