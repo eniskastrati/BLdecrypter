@@ -1,0 +1,17 @@
+echo "Installing BLdecrypter on this Machine";
+echo
+sleep 2;
+echo "Please type in your password to allow the installation"
+sleep 1;
+sudo apt-get install dislocker;
+sudo mkdir /opt/BLdecrypter
+sudo cp ./main/BLdecrypter.desktop /usr/share/applications/BLdecrypter.desktop
+sudo cp ./main/BLdecrypter.png /opt/BLdecrypter
+sudo cp ./main/btlocker /opt/BLdecrypter
+echo
+echo
+echo "#####################################################"
+echo "#           Installation process is done!           #";
+echo "#####################################################"
+sleep 4;
+exit;
