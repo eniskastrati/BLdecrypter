@@ -24,7 +24,7 @@ if [ "$choice" = "1" ]; then
     sudo mkdir -p /media/decrypt;
     sudo mkdir -p /media/windows-mount;
     echo
-    sudo fdisk -l | tail -2;
+    sudo fdisk -l | tail -10;
     echo -n "Please type in the partition that you want to mount (just the id after /dev/): ";
     #reading the user input to get the device path
     read mountDevice;
